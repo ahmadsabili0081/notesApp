@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Apps</title>
+  <meta name="keywords" content="HTML,CSS,JAVASCRIPT">
+  <meta http-equiv="refresh" content="500">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <form class="formNotes">
+      <div class="input__group">
+        <label for="Add a Note">Add a Note</label>
+        <input type="text" placeholder="write the title..." class="title">
+        <textarea name="textarea" id="" placeholder="Write Some notes..." class="textArea"></textarea>
+        <div class="buttonNotes">
+          <button class="add" type="button">Add Note</button>
+          <button class="clear" type="button">Clear All</button>
+        </div>
+      </div>
+    </form>
+    <section class="resultNotes">
+      <div class="container__resultNotes">
+        <h1>Your Note</h1>
+        <div class="row__resultNotes">
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  .container{
+    width : 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    .formNotes{
+      margin: 100px auto;
+      width: 600px;
+      height: auto;
+      border: 1px solid;
+      padding: 20px;
+      border: 1px solid rgba(0,0,0,.125);
+      .input__group{
+        width: 100%;
+        label{
+          margin: 10px 0px;
+          display: block;
+          font-weight: 700;
+          font-size: 20px;
+        }
+        input{
+          width: 100%;
+          padding: 10px;
+          margin: 10px 0px;
+          border: 1px solid #ced4da;
+          font-size: 17px;
+          outline: none;
+          letter-spacing: 1.5px;
+        }
+        textarea{
+          width: 100%;
+          padding: 10px;
+          font-size: 18px;
+          height: 200px;
+          border: 1px solid #ced4da;
+          outline: none;
+        }
+        .buttonNotes{
+          width: 100%;
+          button{
+            display: inline-block;
+            padding: 12px 50px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            margin-right: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+    section.resultNotes{
+      padding: 100px 0px;
+      position: relative;
+      .container__resultNotes{
+        max-width: 1200px;
+        margin: 0px auto;
+        .row__resultNotes{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          .box__note{
+            padding: 12px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 350px;
+            height: auto;
+            border: 1px solid #ced4da;
+            margin: 12px;
+            .notesTitle{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              h2{
+                margin-bottom: 10px;
+                text-transform: capitalize;
+              }
+            }
+            span.text{
+              font-weight: 300;
+              line-height: 1.5;
+            }
+            button.deleteNote{
+              width: 60%;
+              display: block;
+              padding: 12px 30px;
+              outline: none;
+              color: #fff;
+              margin: 20px 0px;
+              border: none;
+              border-radius: 5px;
+              background-color: #007bff;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:570px) {
+  body{
+    .container{
+      width: 100%;
+      padding: 0px 10px;
+      .formNotes{
+        width: 100%;
+        .input__group{
+          .buttonNotes{
+            button{
+              width: 100%;
+            }
+          }
+        }
+      }
+      section.resultNotes{
+        padding: 50px 10px;
+        .container__resultNotes{
+          width: 100%;
+          h1{
+            text-align: center;
+          }
+          .row__resultNotes{
+            .box__note{
+              width: 100%;
+              position: relative;
+              span.text{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

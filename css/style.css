@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+body .container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body .container .formNotes {
+  margin: 100px auto;
+  width: 600px;
+  height: auto;
+  border: 1px solid;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+body .container .formNotes .input__group {
+  width: 100%;
+}
+
+body .container .formNotes .input__group label {
+  margin: 10px 0px;
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+body .container .formNotes .input__group input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  border: 1px solid #ced4da;
+  font-size: 17px;
+  outline: none;
+  letter-spacing: 1.5px;
+}
+
+body .container .formNotes .input__group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  height: 200px;
+  border: 1px solid #ced4da;
+  outline: none;
+}
+
+body .container .formNotes .input__group .buttonNotes {
+  width: 100%;
+}
+
+body .container .formNotes .input__group .buttonNotes button {
+  display: inline-block;
+  padding: 12px 50px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+body .container section.resultNotes {
+  padding: 100px 0px;
+  position: relative;
+}
+
+body .container section.resultNotes .container__resultNotes {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+body .container section.resultNotes .container__resultNotes .row__resultNotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container section.resultNotes .container__resultNotes .row__resultNotes .box__note {
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+  height: auto;
+  border: 1px solid #ced4da;
+  margin: 12px;
+}
+
+body .container section.resultNotes .container__resultNotes .row__resultNotes .box__note .notesTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container section.resultNotes .container__resultNotes .row__resultNotes .box__note .notesTitle h2 {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+body .container section.resultNotes .container__resultNotes .row__resultNotes .box__note span.text {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body .container section.resultNotes .container__resultNotes .row__resultNotes .box__note button.deleteNote {
+  width: 60%;
+  display: block;
+  padding: 12px 30px;
+  outline: none;
+  color: #fff;
+  margin: 20px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 570px) {
+  body .container {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  body .container .formNotes {
+    width: 100%;
+  }
+  body .container .formNotes .input__group .buttonNotes button {
+    width: 100%;
+  }
+  body .container section.resultNotes {
+    padding: 50px 10px;
+  }
+  body .container section.resultNotes .container__resultNotes {
+    width: 100%;
+  }
+  body .container section.resultNotes .container__resultNotes h1 {
+    text-align: center;
+  }
+  body .container section.resultNotes .container__resultNotes .row__resultNotes .box__note {
+    width: 100%;
+    position: relative;
+  }
+  body .container section.resultNotes .container__resultNotes .row__resultNotes .box__note span.text {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
